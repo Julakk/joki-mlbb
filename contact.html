@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hubungi Kami</h1>
+        <nav>
+            <a href="index.html" class="btn">Beranda</a>
+            <a href="joki.html" class="btn">Paket Joki</a>
+            <a href="contact.html" class="btn">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Butuh Bantuan?</h2>
+        <p>Jika ada pertanyaan atau ingin order langsung, silakan hubungi kami.</p>
+
+        <div class="contact-info">
+            <p> Alamat: Kalimantan, Indonesia</p>
+            <p> WhatsApp: <a href="https://wa.me/6287854851480" target="_blank">+62 812-3456-7890</a></p>
+        </div>
+
+        <h3>Kirim Pesan</h3>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <h3>Atau Chat Langsung via WhatsApp</h3>
+        <a href="https://wa.me/6281234567890" class="btn" target="_blank">Chat di WhatsApp</a>
+    </section>
+
+    <footer>
+        <p> 2025 Jasa Joki Mobile Legends</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Pesan Anda telah dikirim! Kami akan segera menghubungi Anda.");
+        });
+    </script>
+</body>
+</html>

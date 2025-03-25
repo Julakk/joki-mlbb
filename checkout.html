@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout Joki ML</h1>
+    </header>
+
+    <section class="checkout-form">
+        <form id="orderForm">
+            <label>Paket:</label>
+            <input type="text" id="paket" readonly>
+
+            <label>Harga:</label>
+            <input type="text" id="harga" readonly>
+
+            <label>ID Game:</label>
+            <input type="text" id="idGame" required>
+
+            <label>Server:</label>
+            <input type="text" id="server" required>
+
+            <button type="button" onclick="sendWhatsApp()">Pesan via WhatsApp</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
