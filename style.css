@@ -3,14 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+/* Layout utama */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
 header {
@@ -193,8 +201,12 @@ footer {
 }
 
 form {
-    margin-top: 20px;
-    text-align: left;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
 }
 
 form label {
@@ -285,4 +297,57 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Gambar QRIS */
+#qrisImage {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Responsif untuk HP */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #qrisImage {
+        width: 100%;
+        max-width: 250px;
+    }
 }
